@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Playfair+Display');
+
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Playfair Display', serif;
+
+*/
+
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  /*width: 1280px;*/
+  padding: 25px;
+  background: #fff;
+}
+/* header */
+header {
+  background: url("../img/header-background.png");
+  background-size: cover;
+  background-position: center;
+  height: 660px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+header .author h4,
+header .author p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 23px;
+}
+header .author h4 {
+  font-size: 32px;
+  padding-top: 170px;
+}
+header h1 {
+  padding-top: 50px;
+  font-size: 48px;
+}
+header h1:after {
+  content: "\00a0";
+  display: block;
+  border: none;
+  border-bottom: 3px solid #fff;
+  width: 80px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-bottom: 30px;
+}
+header p:nth-child(3) {
+  line-height: 25px;
+}
+header .fa-arrow-down {
+  position: absolute;
+  bottom: 70px;
+  transform: translateY(50%);
+}
+
+@media screen and (max-width: 600px){
+  header {
+    height: 560px;
+  }
+  header .author h4 {
+    font-size: 22px;
+    padding-top: 70px;
+  }
+  header h1 {
+    font-size: 26px;
+  }
+}
