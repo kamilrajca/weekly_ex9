@@ -98,6 +98,32 @@ nav .navbar-right ul li a:hover {
   border-bottom: 2px solid #d07c7c;
 }
 
+/*section about me*/
+#about-me {
+  text-align: center;
+  color: #000;
+}
+#about-me h2 {
+  /*font-family: 'Dancing Script', cursive;*/
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-top: 140px;
+  padding-bottom: 24px;
+}
+#about-me h2::after {
+  content: "\00a0";
+  display: block;
+  border: none;
+  border-bottom: 3px solid #d07c7c;
+  width: 80px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-bottom: 30px; 
+}
+#about-me p {
+  font-size: 14px;
+}
 /*media max-width 600px*/
 @media screen and (max-width: 600px){
   header {
@@ -110,4 +136,11 @@ nav .navbar-right ul li a:hover {
   header h1 {
     font-size: 26px;
   }
+  #about-me h2 {
+    font-size: 22px;
+  }
+  #about-me h2::after {
+    margin-bottom: 15px;
+  }  
+
 }
