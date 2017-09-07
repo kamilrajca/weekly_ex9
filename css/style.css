@@ -29,12 +29,12 @@ header {
   text-align: center;
   position: relative;
 }
-header .author h4,
-header .author p {
+header #author h4,
+header #author p {
   font-family: 'Dancing Script', cursive;
   font-size: 23px;
 }
-header .author h4 {
+header #author h4 {
   font-size: 32px;
   padding-top: 170px;
 }
@@ -56,17 +56,54 @@ header h1:after {
 header p:nth-child(3) {
   line-height: 25px;
 }
+header a {
+  color: #fff;
+}
 header .fa-arrow-down {
   position: absolute;
   bottom: 70px;
   transform: translateY(50%);
 }
+/* navigation*/
+nav {
+  height: 55px;
+  border-bottom: 1px solid #747474;
+}
+nav .navbar-left a {
+  float: left;
+  font-size: 22px;
+  font-family: 'Dancing Script', cursive;
+  color: #000;
+  text-decoration: none;
+  margin-left: 54px;
+  margin-top: 16px;
+}
+nav .navbar-right {
+  float: right;
+  /*margin-top: 18px;*/
+}
+nav .navbar-right ul li {
+  list-style-type: none;
+  display: inline;
+}
+nav .navbar-right ul li a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  margin-right: 55px;
+  line-height: 55px;
+  padding-bottom: 5px;  
+}
+nav .navbar-right ul li a:hover {
+  border-bottom: 2px solid #d07c7c;
+}
 
+/*media max-width 600px*/
 @media screen and (max-width: 600px){
   header {
     height: 560px;
   }
-  header .author h4 {
+  header #author h4 {
     font-size: 22px;
     padding-top: 70px;
   }
