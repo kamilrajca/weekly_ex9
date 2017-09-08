@@ -65,11 +65,30 @@ header .fa-arrow-down {
   transform: translateY(50%);
 }
 /* navigation*/
-nav {
+
+/*nawigacja ruchoma*/
+#navigations {
+    background-color: #fff;
+}
+#navigations.scrolling {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 25px;
+}
+
+.clearfix{
+    clear: both;
+}
+#navigations .pos-center {
+  margin: 0 auto;
+  /*max-width: 940px;*/
+  position: relative;
   height: 55px;
   border-bottom: 1px solid #747474;
 }
-nav .navbar-left a {
+#navigations .nav-brand {
   float: left;
   font-size: 22px;
   font-family: 'Dancing Script', cursive;
@@ -78,39 +97,100 @@ nav .navbar-left a {
   margin-left: 54px;
   margin-top: 16px;
 }
-nav .navbar-right {
+#navigations nav {
   float: right;
-  /*margin-top: 18px;*/
+  width: 70%;
 }
-nav .navbar-right ul li {
-  list-style-type: none;
-  display: inline;
+#navigations nav ul,
+#navigations nav ul.visible {
+  /*display: table;*/
+  display: block;
+  margin: 20px;
+  padding: 0;
+  width: 100%;
+  text-align: center;
 }
-nav .navbar-right ul li a {
+#navigations nav ul li {
+  /*display: table-cell;*/
+  display: inline-block;
+  margin-right: 20px;
+  float: right;
+}
+#navigations nav ul li a {
+  text-align: center;
+  display: block;
   text-decoration: none;
   color: #000;
   text-transform: uppercase;
-  margin-right: 55px;
-  line-height: 55px;
+  margin: 0 auto;
   padding-bottom: 5px;  
 }
-nav .navbar-right ul li a:hover {
+#navigations nav {
+  padding-right: 55px;
+}
+#navigations nav ul li a:hover {
   border-bottom: 2px solid #d07c7c;
 }
+#navigations nav ul > li > a {
+    /*height: 55px;*/
+    /*line-height: 55px; *//*było 80px*/
+}
+/*.navigation nav ul li > a:hover {
+  color: #000;
+}*/
+#navigations nav .menu-toggler {
+  display: none;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: 13px;
+  right: 20px;
+}
+#navigations nav .menu-toggler .bar {
+  display: block;
+  height: 4px;
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: #898989;
+  border-radius: 5px;
+}
+#navigations nav .menu-toggler:focus {
+  border: 3px solid #7cc576;
+  padding: 3px;
+  top: 10px;
+}
+nav ul,
+nav ul.visible {
 
-/*section about me*/
-#about-me {
+  display: block;
+  margin: 20px;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/**/
+
+
+
+
+/*section about me, works*/
+#about-me,
+#works {
   text-align: center;
   color: #000;
 }
-#about-me h2 {
-  /*font-family: 'Dancing Script', cursive;*/
+#about-me h2,
+#works h2 {
   font-size: 25px;
   text-transform: uppercase;
   margin-top: 140px;
   padding-bottom: 24px;
 }
-#about-me h2::after {
+#about-me h2::after,
+#works h2::after {
   content: "\00a0";
   display: block;
   border: none;
@@ -123,7 +203,35 @@ nav .navbar-right ul li a:hover {
 }
 #about-me p {
   font-size: 14px;
+  line-height: 30px;
 }
+
+/*sekcja works*/
+#works h2 {
+  margin-top: 125px;
+}
+#works {
+  height: 800px;
+  background-color: red;
+}
+
+@media screen and (max-width: 768px){
+
+  .navigation .logo {
+    margin-top: 25px;
+    margin-left: 10px;
+  }
+  .navigation nav {
+    width: 100%;
+  }
+  .navigation nav .menu-toggler{
+    display: block;
+  }
+  .navigation nav ul {
+    display: none;
+  } 
+}
+
 /*media max-width 600px*/
 @media screen and (max-width: 600px){
   header {
@@ -144,3 +252,4 @@ nav .navbar-right ul li a:hover {
   }  
 
 }
+
