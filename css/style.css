@@ -250,7 +250,7 @@ nav ul.visible {
   .navigation nav {
     width: 100%;
   }
-  .navigation nav .menu-toggler{
+  .navigation nav .menu-toggler {
     display: block;
   }
   .navigation nav ul {
@@ -275,7 +275,12 @@ nav ul.visible {
   }
   #about-me h2::after {
     margin-bottom: 15px;
-  }  
-
+  }
+  .carousel-inner .item p {
+    font-size: 14px;
+  }
+  .carousel-inner .item .author {
+    font-size: 10px;
+  }
 }
 
