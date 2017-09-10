@@ -73,6 +73,7 @@ header .fa-arrow-down {
   position: absolute;
   bottom: 70px;
   transform: translateY(50%);
+  color: #fff;
 }
 /* navigation*/
 
@@ -212,12 +213,92 @@ nav ul.visible {
   width: 200px;
   margin: 0 auto;
 }
+#works .gallery {
+  min-height: 1172px;
+}
+#works .gallery .img-w1 {
+  background-image: url(../img/w1.png);
+  background-size: cover;
+  background-position: center;
+  width: calc(67% - 25px);
+  height: 370px;
+  float: left;
+  margin-bottom: 25px;
+}
+#works .gallery .img-box {
+  background-image: url(../img/frame.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin-top: 30%;
+  margin-left: 30%;
+}
+#works .gallery .img-title {
+  /*margin: 50% auto;*/
+  margin-left: -250px;
+  margin-top: 150px;
+}
 
-/* section worl-carousel*/
+
+
+#works .gallery .img-w2 {
+  background-image: url(../img/w2.png);
+  background-size: cover;
+  background-position: center;
+  width: 33%;
+  height: 758px;
+  float: right;
+  margin-bottom: 25px;
+}
+#works .gallery .img-w3 {
+  background-image: url(../img/w3.png);
+  background-size: cover;
+  background-position: center;
+  width: 31%;
+  height: 361px;
+  float: left;
+  margin-bottom: 25px;
+}
+#works .gallery .img-w4 {
+  background-image: url(../img/w4.png);
+  background-size: cover;
+  background-position: center;
+  width: 31%;
+  height: 361px;
+  float: right;
+  margin-bottom: 25px;
+  margin-right: 25px;
+}
+#works .gallery .img-w5 {
+  background-image: url(../img/w5.png);
+  background-size: cover;
+  background-position: center;
+  width: calc(67% - 25px);
+  height: 370px;
+  float: left;
+}
+#works .gallery .img-w6 {
+  background-image: url(../img/w6.png);
+  background-size: cover;
+  background-position: center;
+  width: 33%;
+  height: 370px;
+  float: right;
+}
+
+#works .gallery .img-title h4 {
+  color: #fff;
+  font-size: 24px;
+}
+#works .gallery .img-title p {
+  color: #fff;
+  font-size: 14px;
+}
+
+/* section world-carousel*/
 #world-carousel h2 {
   margin-top: 140px;
 }
-
 /* Carousel*/
 .carousel {
   /*max-width: 928px;*/
@@ -379,6 +460,23 @@ footer p:nth-child(4) {
   .navigation nav ul {
     display: none;
   }
+  /*works*/
+  #works .gallery .img-w1,
+  #works .gallery .img-w2,
+  #works .gallery .img-w3,
+  #works .gallery .img-w4,
+  #works .gallery .img-w5,
+  #works .gallery .img-w6 {
+    display: block;
+    width: 80%;
+    height: 300px;
+    float: none;
+    margin: 20px auto;
+  }
+  #works .btn-works {
+   margin-top: 50px;
+  }
+
   /* follow me - social media*/
   #follow-me .social ul li {
     margin-right: 15px;
