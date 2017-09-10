@@ -1,3 +1,4 @@
+// 
 $(document).ready(function(){
   $('.menu-toggler').click(function(){
     $('.menu').toggleClass('visible');
@@ -6,12 +7,12 @@ $(document).ready(function(){
 
 // nawigacja ruchoma
 jQuery(function ($) {
-    var scrollingStartDistance = $("#navigations").offset().top;
+    var scrollingStartDistance = $(".navigation").offset().top;
 
     $(document).scroll(function () {
         var scrollTop = $(document).scrollTop();
         
-        $("#navigations").toggleClass("scrolling", scrollTop > scrollingStartDistance);
+        $(".navigation").toggleClass("scrolling", scrollTop > scrollingStartDistance);
     });
 });
 // carousel
