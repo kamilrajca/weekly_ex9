@@ -1,15 +1,15 @@
 // płynne przewijanie menu
-$(document).on('click', 'a', function(event){
+$(document).on('click', '.section-pointer', function(event){
       event.preventDefault();
       $('body').animate({
-          scrollTop: $($.attr(this, 'href')).offset().top
+          scrollTop: $($.attr(this, 'href')).offset().top - 90 //(50 wysokość menu)
       }, 800);
   });
 
-
 // hamburger
 $(document).ready(function(){
-  $('.menu-toggler').click(function(){
+  $('.menu-toggler').click(function(e){
+    e.preventDefault();
     $('.menu').toggleClass('visible');
   });
 });
@@ -24,6 +24,7 @@ jQuery(function ($) {
         $(".navigation").toggleClass("scrolling", scrollTop > scrollingStartDistance);
     });
 });
+
 // carousel
 $(function(){
   var carouselList = $("#carousel ul");
