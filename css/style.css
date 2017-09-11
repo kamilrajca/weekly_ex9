@@ -479,7 +479,6 @@ footer p:nth-child(4) {
 
 /*media max width 768px*/
 @media screen and (max-width: 768px){
-
   .navigation .logo {
     margin-top: 25px;
     margin-left: 10px;
@@ -505,10 +504,28 @@ footer p:nth-child(4) {
     height: 300px;
     float: none;
     margin: 20px auto;
+    padding-top: 50px;
   }
   #works .btn-works {
    margin-top: 50px;
   }
+  #works .gallery .img-w1 .img-box,
+  #works .gallery .img-w2 .img-box,
+  #works .gallery .img-w3 .img-box,
+  #works .gallery .img-w4 .img-box,
+  #works .gallery .img-w5 .img-box,
+  #works .gallery .img-w6 .img-box {
+    margin-top: 20px;
+    width: 38%;
+  }
+  #works .gallery .img-w1 .img-box:hover,
+  #works .gallery .img-w2 .img-box:hover,
+  #works .gallery .img-w3 .img-box:hover,
+  #works .gallery .img-w4 .img-box:hover,
+  #works .gallery .img-w5 .img-box:hover,
+  #works .gallery .img-w6 .img-box:hover {
+    width: calc(38% + 20px);
+  } 
 
   /* follow me - social media*/
   #follow-me .social ul li {
