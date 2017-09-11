@@ -492,6 +492,10 @@ footer p:nth-child(4) {
   .navigation nav ul {
     display: none;
   }
+  .navigation nav .menu li {
+    text-align: center;
+    width: 100%;
+  }
   /*works*/
   #works .gallery .img-w1,
   #works .gallery .img-w2,
