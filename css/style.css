@@ -252,13 +252,13 @@ nav ul.visible {
   height: 370px;
   float: right;
 }
-#works .gallery .img-title h4 {
+.gallery-item-title {
   color: #fff;
   font-size: 24px;
   border-bottom: 2px solid #fff;
   padding-bottom: 10px;
 }
-#works .gallery .img-title p {
+.gallery-item-text {
   color: #fff;
   font-size: 14px;
 }
@@ -552,10 +552,10 @@ footer p:nth-child(4) {
   #about-me h2::after {
     margin-bottom: 15px;
   }
-  #works .gallery .img-title h4 {
+  .gallery-item-title {
     font-size: 16px;
   }
-  #works .gallery .img-title p {
+  .gallery-item-text {
     font-size: 12px;
   }
   .carousel-inner .item p {
