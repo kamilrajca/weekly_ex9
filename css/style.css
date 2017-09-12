@@ -79,7 +79,6 @@ header .fa-arrow-down {
 }
 
 /* navigation*/
-
 /*nawigacja ruchoma*/
 .navigation {
     background-color: #fff;
@@ -181,18 +180,11 @@ nav ul.visible {
   text-align: center;
   color: #000;
 }
-#about-me h2,
-#works h2,
-#follow-me h2,
-#contact h2 {
+.title {
   margin-top: 140px;
   padding-bottom: 24px;
 }
-#about-me h2::after,
-#works h2::after,
-#world-carousel h2::after,
-#follow-me h2::after,
-#contact h2::after {
+.title::after {
   content: "\00a0";
   display: block;
   border: none;
@@ -201,7 +193,6 @@ nav ul.visible {
   left: 0;
   right: 0;
   margin: auto;
-  margin-bottom: 30px; 
 }
 #about-me p {
   font-size: 14px;
@@ -209,9 +200,6 @@ nav ul.visible {
 }
 
 /*section works*/
-#works h2 {
-  margin-top: 125px;
-}
 #works .btn-works {
   width: 200px;
   margin: 0 auto;
@@ -219,12 +207,7 @@ nav ul.visible {
 #works .gallery {
   min-height: 1172px;
 }
-#works .gallery .img-w1,
-#works .gallery .img-w2,
-#works .gallery .img-w3,
-#works .gallery .img-w4,
-#works .gallery .img-w5,
-#works .gallery .img-w6 {
+#works .gallery .img-gallery {
   background-size: cover;
   background-position: center;
 }
@@ -290,30 +273,24 @@ nav ul.visible {
   vertical-align: middle;
   transition: width 0.3s, height 0.3s ease-in-out;
 }
+#works .gallery .img-box {
+  margin-top: 120px;
+}
 #works .gallery .img-w1 .img-box {
-  margin-top: 100px;
+  margin-top: 130px;
   width: 30%;
 }
 #works .gallery .img-w2 .img-box {
   margin-top: 330px;
   width: 55%;
 }
-#works .gallery .img-w3 .img-box,
-#works .gallery .img-w4 .img-box,
-#works .gallery .img-w6 .img-box {
-  margin-top: 100px;
+#works .gallery .img-short .img-box {
   width: 60%;
 }
 #works .gallery .img-w5 .img-box {
-  margin-top: 100px;
   width: 40%;
 }
-#works .gallery .img-w1 .img-box:hover,
-#works .gallery .img-w2 .img-box:hover,
-#works .gallery .img-w3 .img-box:hover,
-#works .gallery .img-w4 .img-box:hover,
-#works .gallery .img-w5 .img-box:hover,
-#works .gallery .img-w6 .img-box:hover {
+#works .gallery .img-gallery .img-box:hover {
   height: 135px;
 }
 #works .gallery .img-w1 .img-box:hover {
@@ -322,9 +299,7 @@ nav ul.visible {
 #works .gallery .img-w2 .img-box:hover {
   width: calc(55% + 20px);
 }
-#works .gallery .img-w3 .img-box:hover,
-#works .gallery .img-w4 .img-box:hover,
-#works .gallery .img-w6 .img-box:hover {
+#works .gallery .img-short .img-box:hover {
   width: calc(60% + 20px);
 }
 #works .gallery .img-w5 .img-box:hover {
@@ -332,9 +307,6 @@ nav ul.visible {
 }
 
 /* section world-carousel*/
-#world-carousel h2 {
-  margin-top: 140px;
-}
 /* Carousel*/
 .carousel {
   /*max-width: 928px;*/
@@ -377,9 +349,6 @@ nav ul.visible {
 #follow-me {
   text-align: center;
 }
-#follow-me h2 {
-  margin-top: 130px;
-}
 #follow-me .social ul li {
   display: inline-block;
 }
@@ -419,7 +388,6 @@ nav ul.visible {
   opacity: 1; 
 }
 
-
 /*section contact*/
 #contact {
   text-align: center;
@@ -437,11 +405,13 @@ nav ul.visible {
   font-size: 14px;
   color: #959494; 
 }
-#contact p:nth-child(2) {
-  margin: -40px 0 40px 0;
+#contact form {
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 #contact form input {
-  width: 584px;
+  width: 100%;
   height: 48px;
   border: 1px solid #d07c7c;
   padding-left: 30px;
@@ -451,7 +421,7 @@ nav ul.visible {
   margin: 16px auto;
 }
 #contact form textarea {
-  width: 584px;
+  width: 100%;
   height: 138px;
   border: 1px solid #d07c7c;
   margin-bottom: 16px;
@@ -520,13 +490,12 @@ footer p:nth-child(4) {
     border-bottom: none;
     color: rgba(0,0,0, 0.5);
   }
+  .title {
+    margin-top: 50px;
+    padding-bottom: 0;
+  }
   /*works*/
-  #works .gallery .img-w1,
-  #works .gallery .img-w2,
-  #works .gallery .img-w3,
-  #works .gallery .img-w4,
-  #works .gallery .img-w5,
-  #works .gallery .img-w6 {
+  #works .gallery .img-gallery {
     display: block;
     width: 80%;
     height: 300px;
@@ -537,21 +506,11 @@ footer p:nth-child(4) {
   #works .btn-works {
    margin-top: 50px;
   }
-  #works .gallery .img-w1 .img-box,
-  #works .gallery .img-w2 .img-box,
-  #works .gallery .img-w3 .img-box,
-  #works .gallery .img-w4 .img-box,
-  #works .gallery .img-w5 .img-box,
-  #works .gallery .img-w6 .img-box {
-    margin-top: 20px;
+  #works .gallery .img-gallery .img-box {
+    margin-top: 30px;
     width: 38%;
   }
-  #works .gallery .img-w1 .img-box:hover,
-  #works .gallery .img-w2 .img-box:hover,
-  #works .gallery .img-w3 .img-box:hover,
-  #works .gallery .img-w4 .img-box:hover,
-  #works .gallery .img-w5 .img-box:hover,
-  #works .gallery .img-w6 .img-box:hover {
+  #works .gallery .img-gallery .img-box:hover {
     width: calc(38% + 20px);
   } 
   /*follow me- social media*/
@@ -562,9 +521,8 @@ footer p:nth-child(4) {
   line-height: 38px;
   }
   /*contact*/
-  #contact form input,
-  #contact form textarea {
-    width: 450px;
+  #contact {
+    margin-top: 60px;
   }
   #contact .special p {
     margin: 0;
@@ -595,24 +553,23 @@ footer p:nth-child(4) {
   #about-me h2::after {
     margin-bottom: 15px;
   }
+  #works .gallery .img-title h4 {
+    font-size: 16px;
+  }
+  #works .gallery .img-title p {
+    font-size: 12px;
+  }
   .carousel-inner .item p {
     font-size: 14px;
   }
   .carousel-inner .item .sign {
     font-size: 10px;
   }
-    /*contact*/
-  #contact form input,
-  #contact form textarea {
-    width: 400px;
-  }
 }
 
-@media screen and (max-width: 460px) {
-  /*contact*/
-  #contact form input,
-  #contact form textarea {
-    width: 220px;
+/*media max-width 400px*/
+@media screen and (max-width: 400px) {
+  #works .gallery .img-gallery .img-box {
+    width: 50%;
   }
 }
-
