@@ -274,14 +274,13 @@ nav ul.visible {
   transition: width 0.3s, height 0.3s ease-in-out;
 }
 #works .gallery .img-box {
-  margin-top: 120px;
-}
-#works .gallery .img-w1 .img-box {
-  margin-top: 130px;
+  position: relative;
+  top: 125px;
   width: 30%;
 }
 #works .gallery .img-w2 .img-box {
-  margin-top: 330px;
+  position: relative;
+  top: 319px;
   width: 55%;
 }
 #works .gallery .img-short .img-box {
@@ -309,7 +308,6 @@ nav ul.visible {
 /* section world-carousel*/
 /* Carousel*/
 .carousel {
-  /*max-width: 928px;*/
   margin-left: 0;
   margin-bottom: 60px;
  }
@@ -507,7 +505,8 @@ footer p:nth-child(4) {
    margin-top: 50px;
   }
   #works .gallery .img-gallery .img-box {
-    margin-top: 30px;
+    position: relative;
+    top: 50px;
     width: 38%;
   }
   #works .gallery .img-gallery .img-box:hover {
